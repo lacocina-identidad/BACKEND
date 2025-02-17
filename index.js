@@ -2,7 +2,7 @@
 const app = require("./app");
 const sequelize = require("./db");
 
-const port = process.env.PORT || 3000;
+const port = 25773 || 3000;
 
 // Sincronizar la base de datos y luego iniciar el servidor
 sequelize
