@@ -13,6 +13,9 @@ app.use(cors({
   credentials: true, // Permite el envío de credenciales (cookies, headers de autenticación, etc.)
 }));
 
+app.get('/', (req, res) => {
+  res.send('¡Hola desde Vercel!');
+});
 // Rutas
 app.use("/api", routes);
 
